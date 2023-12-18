@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoFlow</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900 cursor-default">
+    <div
+      class="pt-[2.1rem] pb-[1.8rem] my-[0.9rem] h-[20%] w-[100%] flex flex-col relative"
+    >
+      <div class="flex justify-between items-center px-[7%]">
+        <div class="flex gap-[5rem] justify-between items-center">
+          <img
+            src="./currency.svg"
+            class="h-[4.5rem] cursor-pointer"
+            alt="LoGo"
+          />
+          <ul
+            class="flex overflow-hidden gap-[3rem] font-[600] text-[1.5rem] max-[415px]:flex-col max-[415px]:absolute max-[415px]:top-[9.1rem] max-[415px]:bg-slate-100 max-[415px]:text-[#0F1629] max-[415px]:gap-[0rem] max-[415px]:w-[100%] max-[415px]:left-0 max-[415px]:items-center max-[415px]:text-[1.8rem] max-[415px]:font-[700]"
+            id="menu"
+          >
+            <li class="max-[415px]:my-[1.2rem]">
+              <a href="">Home</a>
+            </li>
+            <li class="max-[415px]:my-[1.2rem]">
+              <a href="#stocks">Stocks</a>
+            </li>
+            <li class="max-[415px]:my-[1.2rem]">
+              <a href="#input">Search</a>
+            </li>
+            <li class="max-[415px]:my-[1.2rem]">
+              <a href="#footer">About</a>
+            </li>
+          </ul>
+        </div>
+        <select
+          class="bg-transparent cursor-pointer text-[1.5rem] border-2 rounded-xl px-[2rem] border-slate-50 outline-none max-[415px]:hidden max-[415px]:justify-center"
+          name="language"
+          id="language"
+        >
+          <option class="text-black" value="EN">EN</option>
+          <option class="text-black" value="EN">FR</option>
+          <option class="text-black" value="EN">HI</option>
+          <option class="text-black" value="EN">ZU</option>
+        </select>
+        <button class="hidden max-[415px]:block" id="menubtn">
+          <img
+            src="./icons/menu.png"
+            alt="menu_icon"
+            class="w-[3.7rem] hidden max-[415px]:block"
+            srcset=""
+          />
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="m-auto flex pt-[9.5rem] justify-center gap-[12rem] items-center w-[80%] max-[943px]:w-[90%] max-[943px]:gap-[0rem] max-[943px]:pt-[7.5rem] max-[625px]:pt-[6.7rem] max-[415px]:pt-[4rem]"
+    >
+      <div
+        class="pl-[3%] upper_div max-[625px]:mx-[10%] max-[625px]:pl-[0%] max-[415px]:mx-[5%]"
+      >
+        <p
+          class="font-[700] text-[8.6rem] leading-[8.5rem] tracking-[0.4rem] max-[786px]:text-[7.3rem] max-[786px]:leading-[7.5rem] max-[786px]:tracking-[0.4rem] max-[625px]:text-[8rem] max-[625px]:leading-[7.8rem] max-[625px]:tracking-[0.4rem] max-[479px]:text-[6.8rem] max-[415px]:text-[6rem] max-[415px]:leading-[5.9rem] max-[415px]:tracking-[0.3rem]"
+        >
+          BUY &amp;<br />
+          SELL <span class="text-[#E2B53A] tracking-[0.4rem]">Crypto</span>
+        </p>
+
+        <p
+          class="mt-[2.9rem] text-[1.4rem] font-[500] max-[415px]:text-[1.2rem]"
+        >
+          World's biggest cryptocurrency exchange available on web<br
+            class="max-[277px]:hidden"
+          />
+          as well as mobile phone.
+        </p>
+
+        <button
+          class="mt-[2rem] py-[.5rem] px-[1rem] bg-orange-500 w-[17rem] rounded-xl text-[1.6rem] hover:bg-orange-600 max-[415px]:mt-[1.7rem] max-[415px]:w-[12rem] max-[415px]:text-[1.3rem]"
+        >
+          <a href="#input">EXPLORE MORE</a>
+        </button>
+      </div>
+      <img
+        src="./graph_Right.png"
+        id="image_right"
+        class="w-[37%] max-[943px]:w-[33%] max-[786px]:w-[30%] max-[625px]:hidden"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <div
+      class="w-[75%] py-[11rem] m-auto my-[2rem] max-[1144px]:w-[80%] max-[1144px]:py-[9rem] max-[912px]:w-[75%] max-[415px]:py-[5rem]"
+      id="stocks"
+    >
+      <div
+        class="grid grid-cols-4 gap-[4rem] items-center justify-items-center max-[912px]:grid-cols-2 max-[415px]:grid-cols-1"
+      >
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] w-[25rem] border-2 flex py-[1.7rem] px-[3rem] items-center justify-start gap-[2.5rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/aave.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Aave</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="aave"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 w-[25rem] flex py-[1.7rem] px-[3rem] items-center justify-start gap-[2.5rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/bitcoin.png" class="h-[4.1rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Bitcoin</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="btc"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex w-[25rem] justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/cardano.png" class="h-[4.2rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Cardano</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="cd"></p>
+          </div>
+        </div>
+
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 w-[25rem] flex justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/cosmos.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Cosmos</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="cms"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex w-[25rem] justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/dogecoin.png" class="h-[4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Dogecoin</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="dgc"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex w-[25rem] justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/ethereum.png" class="h-[4.2rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Ethereum</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="eth"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl w-[25rem] max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/filecoin.png" class="h-[4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Filecoin</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="fc"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl w-[25rem] max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/gnosis.png" class="h-[4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Gnosis</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="gno"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl w-[25rem] max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/immutable.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Immutable</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="imm"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] w-[25rem] items-center py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/maker.png" class="h-[4.5rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Maker</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="mkr"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] w-[25rem] items-center py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/monero.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Monero</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="mno"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center w-[25rem] py-[1.7rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/okx.png" class="h-[3.3rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">OKB</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="okb"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] w-[25rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/polkadot.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Polkadot</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="pol"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] w-[25rem] px-[3rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/solana.png" class="h-[4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Solana</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="sol"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] w-[25rem] rounded-xl max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/stellar.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">Stellar</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="slr"></p>
+          </div>
+        </div>
+        <div
+          class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex justify-start gap-[2.5rem] items-center py-[1.7rem] px-[3rem] rounded-xl w-[25rem] max-[506px]:px-[1.5rem] max-[506px]:w-[22rem] max-[415px]:w-[25rem] max-[415px]:px-[3rem]"
+        >
+          <img src="./icons/tron.png" class="h-[4.4rem]" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[1.7rem]">TRON</p>
+            <p class="text-[2rem] font-[500] text-[#E2B53A]" id="tron"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex my-[3rem] items-center justify-center flex-col gap-[4rem] max-[415px]:my-[2rem]"
+    >
+      <div>
+        <input
+          type="text"
+          class="outline-none h-[4rem] w-[30rem] px-[3%] text-[1.5rem] text-black rounded-xl mr-[1rem] max-[415px]:w-[21rem] max-[415px]:text-[1.3rem] max-[415px]:mr-[0.6rem]"
+          placeholder="Enter any cryptocurrency"
+          name=""
+          id="input"
+          required
+        />
+        <button
+          type="submit"
+          class="rounded-xl bg-orange-500 h-[4rem] text-[1.5rem] font-[500] w-[8rem] hover:bg-orange-600 max-[415px]:text-[1.3rem] max-[415px]:w-[5.2rem]"
+          id="click"
+        >
+          Search
+        </button>
+      </div>
+      <div
+        id="parent"
+        class="shadow-[3px_3px_6px_4px_rgba(0,0,0,1),-2px_-2px_4px_0px_rgba(255,255,255,0.9)] border-2 flex flex-col justify-start items-center py-[1.7rem] px-[2.6rem] w-[35rem] rounded-xl max-[415px]:w-[26.5rem]"
+      >
+        <p
+          id="result"
+          class="text-[1.7rem] text-center max-[415px]:text-[1.6rem]"
+        >
+          Search a valid cryptocurrency
+        </p>
+        <p
+          class="text-[2rem] font-[500] text-[#E2B53A] max-[415px]:text-[1.8rem]"
+          id="showResult"
+        >
+          $ xxxx
+        </p>
+      </div>
+    </div>
+    <div
+      class="w-full mt-[8rem] h-auto flex justify-between px-[11%] items-center cursor-default bg-white max-[415px]:mt-[4rem] max-[415px]:px-[6%]"
+      id="footer"
+    >
+      <p
+        class="text-[1.3rem] font-[600] text-[#333333] max-[415px]:text-[1rem]"
+      >
+        &#169; All Rights Reserved
+      </p>
+      <p class="flex items-center gap-4 max-[415px]:gap-2">
+        <a href="https://www.paypal.com/in/home">
+          <img src="./icons/paypal.svg" class="h-[4.5rem]" alt="" />
+        </a>
+        <a href="https://www.visa.co.in/">
+          <img
+            src="./icons/visa.svg"
+            class="h-[3rem] bg-white max-[415px]:hidden"
+            alt=""
+          />
+        </a>
+        <a href="https://pay.google.com/about/">
+          <img
+            src="./icons/google-pay.svg"
+            class="h-[2.9rem] bg-white"
+            alt=""
+          />
+        </a>
+        <a href="https://paytm.com/">
+          <img
+            src="./icons/paytm.svg"
+            class="h-[1.32rem] bg-white mb-[0.3rem] max-[415px]:hidden"
+            alt=""
+          />
+        </a>
+        <a href="https://www.mastercard.co.in/en-in.html">
+          <img
+            src="./icons/mastercard.svg"
+            class="h-[2.1rem] bg-white mb-[0.3rem]"
+            alt=""
+          />
+        </a>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
